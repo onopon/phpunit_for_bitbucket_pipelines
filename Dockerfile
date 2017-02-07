@@ -26,9 +26,6 @@ RUN sed -i -e "$ a default-character-set = utf8" /etc/mysql/my.cnf
 RUN sed -i -e "$ a [mysql]" /etc/mysql/my.cnf
 RUN sed -i -e "$ a default-character-set = utf8" /etc/mysql/my.cnf
 
-RUN touch /var/lib/mysql/mysql.sock
-RUN chown mysql:mysql /var/lib/mysql
-
 ### PHP ###
 RUN apt-get install -q -y php php-mysql php-xml php-cli php-gd php-intl php-mbstring
 
