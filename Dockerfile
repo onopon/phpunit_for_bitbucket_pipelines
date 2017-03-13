@@ -27,7 +27,7 @@ RUN sed -i -e "$ a [mysql]" /etc/mysql/my.cnf
 RUN sed -i -e "$ a default-character-set = utf8" /etc/mysql/my.cnf
 
 ### PHP ###
-RUN apt-get install -q -y php php-mysql php-xml php-cli php-gd php-intl php-mbstring
+RUN apt-get install -q -y php php-mysql php-xml php-cli php-gd php-intl php-mbstring php-curl
 
 ### Composer ###
 RUN curl -sS https://getcomposer.org/installer | php
